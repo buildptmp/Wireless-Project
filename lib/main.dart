@@ -3,14 +3,6 @@
 // found in the LICENSE file.
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:provider_shopper/common/theme.dart';
-import 'package:provider_shopper/models/cart.dart';
-import 'package:provider_shopper/models/class_menu.dart';
-import 'package:provider_shopper/screens/order.dart';
-import 'package:provider_shopper/screens/class_res.dart';
-import 'package:provider_shopper/screens/home.dart';
-import 'package:provider_shopper/screens/login.dart';
 
 void main() {
   runApp(const MyApp());

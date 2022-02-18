@@ -42,7 +42,16 @@ class RestaurantLogIn extends StatelessWidget {
               ElevatedButton(
                 child: const Text('Log in'),
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/menu');
+                  Navigator.pushReplacementNamed(context, '/home');
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.yellow,
+                ),
+              )
+              ElevatedButton(
+                child: const Text('Register'),
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, '/register');
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.yellow,
