@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(project LANGUAGES CXX)
+project(pjwireless LANGUAGES CXX)
 
-set(BINARY_NAME "project")
+set(BINARY_NAME "pjwireless")
 
 cmake_policy(SET CMP0063 NEW)
 

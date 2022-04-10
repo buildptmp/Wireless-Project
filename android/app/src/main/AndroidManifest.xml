@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.project">
+    package="com.example.pjwireless">
    <application
-        android:label="project"
+        android:label="pjwireless"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
