@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/restaurant.dart';
 import 'package:pjwireless/screen/starDisplay.dart';
+import 'package:pjwireless/screen/reslist.dart';
 
 void main() => runApp(MyApp());
 List<String> buttonsTitle = ["All", "Popular", "Dessert", "Snack", "Fast Food"];
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       debugShowMaterialGrid: false,
-      title: 'Flutter Demo',
+      title: 'Appetite',
       theme: ThemeData(
         primarySwatch: Colors.yellow,
         fontFamily: 'Montserrat',
@@ -37,13 +38,7 @@ class Home extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: FloatingActionButton(
-        child: const Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
-        onPressed: () {},
-      ),
+
       bottomNavigationBar: BottomAppBar(
         shape: CircularNotchedRectangle(),
         notchMargin: 7.0,
@@ -57,15 +52,18 @@ class Home extends StatelessWidget {
             ),
             IconButton(
               icon: Icon(Icons.list),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(Icons.favorite_border),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => MyPage()),
+                );
+              }
             ),
             IconButton(
               icon: Icon(Icons.person_outline),
-              onPressed: () {},
+              onPressed: () {
+
+    },
             ),
           ],
         ),
@@ -84,7 +82,6 @@ class Home extends StatelessWidget {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          Text("8/04/2022"),
                           Text(
                             "What would you like to EAT ?",
                             style: TextStyle(
@@ -113,55 +110,11 @@ class Home extends StatelessWidget {
                 Container(
                   height: 275,
                   child: ListView.builder(
-                    itemCount: 5,
+                    itemCount: 1,
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, id) {
                       return LargeContainer();
                     },
-                  ),
-                ),
-                SizedBox(height: 15.0),
-                Container(
-                  padding: EdgeInsets.symmetric(vertical: 9, horizontal: 13),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(9.0),
-                    boxShadow: [
-                      BoxShadow(
-                          blurRadius: 5.0,
-                          offset: Offset(0, 5),
-                          color: Colors.grey),
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Container(
-                        padding: EdgeInsets.all(5.0),
-                        margin: EdgeInsets.symmetric(horizontal: 9.0),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5.0),
-                          gradient: LinearGradient(
-                              colors: [Colors.redAccent, Colors.red]),
-                        ),
-                        child: Text(
-                          "Sale",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Text(
-                          "# Gourmet food in summer",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 21,
-                          ),
-                        ),
-                      )
-                    ],
                   ),
                 ),
                 SizedBox(height: 15.0),
