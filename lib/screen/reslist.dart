@@ -13,7 +13,7 @@ class _MyPageState extends State<MyPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Restaurant"),
+        title: Text("Restaurant & Cafe"),
       ),
       body: Padding(
         padding: EdgeInsets.all(5),
@@ -47,7 +47,7 @@ class _MyPageState extends State<MyPage> {
                             child: Image(
                               fit: BoxFit.cover,
                               alignment: Alignment.topRight,
-                              image: AssetImage('assets/cake.jpg'),
+                              image: AssetImage('assets/Mont.jpg'),
                             ),
                           ),
                         ),
@@ -57,6 +57,7 @@ class _MyPageState extends State<MyPage> {
                 ),
               ),
             ),
+
             FittedBox(
               child: Card(
                 // color: Colors.red,
@@ -75,7 +76,7 @@ class _MyPageState extends State<MyPage> {
                         child: Image(
                           fit: BoxFit.cover,
                           alignment: Alignment.topRight,
-                          image: AssetImage('assets/juice.jpg'),
+                          image: AssetImage('assets/Sheddo.jpg'),
                         ),
                       ),
                     ),
@@ -83,6 +84,8 @@ class _MyPageState extends State<MyPage> {
                 ),
               ),
             ),
+
+
             FittedBox(
               child: Card(
                 // color: Colors.red,
@@ -101,7 +104,7 @@ class _MyPageState extends State<MyPage> {
                         child: Image(
                           fit: BoxFit.cover,
                           alignment: Alignment.topRight,
-                          image: AssetImage('assets/pizza.jpg'),
+                          image: AssetImage('assets/BanNam.jpg'),
                         ),
                       ),
                     ),
@@ -109,6 +112,7 @@ class _MyPageState extends State<MyPage> {
                 ),
               ),
             ),
+
             FittedBox(
               child: Card(
                 // color: Colors.red,
@@ -127,7 +131,7 @@ class _MyPageState extends State<MyPage> {
                         child: Image(
                           fit: BoxFit.cover,
                           alignment: Alignment.topRight,
-                          image: AssetImage('assets/elite.jpg'),
+                          image: AssetImage('assets/Savoey.jpg'),
                         ),
                       ),
                     ),
@@ -151,7 +155,7 @@ class _MyPageState extends State<MyPage> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
             child: Text(
-              "Italian Choco Cake",
+              "Mont Nom Sod",
               style: TextStyle(
                   fontWeight: FontWeight.bold, fontSize: 15, color: Colors.red),
             ),
@@ -160,7 +164,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Dark belgium chocolate",
+            "Cafe",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
@@ -219,7 +223,7 @@ class _MyPageState extends State<MyPage> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
             child: Text(
-              "Fresh Mango Juice",
+              "Sheddo Sushi Cottage",
               style: TextStyle(
                   fontWeight: FontWeight.bold, fontSize: 15, color: Colors.red),
             ),
@@ -228,7 +232,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Dark belgium chocolate",
+            "Japanese Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
@@ -295,7 +299,7 @@ class _MyPageState extends State<MyPage> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
             child: Text(
-              "Cheese Pizza Italy ",
+              "Ban Nam Khiang Din ",
               style: TextStyle(
                   fontWeight: FontWeight.bold, fontSize: 15, color: Colors.red),
             ),
@@ -304,7 +308,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Double cheese New York Style",
+            "Thai Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
@@ -371,7 +375,7 @@ class _MyPageState extends State<MyPage> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
             child: Text(
-              "Alinea Chicago",
+              "Sawei Thamaharat",
               style: TextStyle(
                   fontWeight: FontWeight.bold, fontSize: 15, color: Colors.red),
             ),
@@ -380,7 +384,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Classical French cooking",
+            "Thai - International Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
@@ -404,6 +408,11 @@ class _MyPageState extends State<MyPage> {
               ),
               SizedBox(
                 width: 10,
+              ),
+              Icon(
+                Icons.star,
+                size: 10,
+                color: Colors.orangeAccent,
               ),
               Icon(
                 Icons.star,
