@@ -33,9 +33,9 @@ class _InforPageState extends State<reslistinfo> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "Italian Choco Cake",
+                                "Mont Nom Sod",
                                 style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.black,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 20),
                               ),
@@ -60,10 +60,10 @@ class _InforPageState extends State<reslistinfo> {
                     child: ClipOval(
                       child: Container(
                         child: new Image.asset(
-                          "assets/cake.jpg",
+                          "assets/Mont.jpg",
                           fit: BoxFit.cover,
-                          width: 175,
-                          height: 175,
+                          width: 300,
+                          height: 300,
                         ),
                       ),
                     ),
@@ -86,7 +86,11 @@ class _InforPageState extends State<reslistinfo> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("-description-"),
+                  Text("Mont Nomsod is a cafe that famous in variety of delicous toast and fresh milk."
+                      "\n Opening hours: 11:00 am - 09:00 pm, everyday"
+                      "\n Tel: 02-611-4898"
+                      "\n Address: 2nd floor, Mont Nom Sod, MBK, 444, Phaya Thai Rd, Wang Mai, Pathumwan, Bangkok 10330 Thailand"),
+
                   SizedBox(
                     height: 10,
                   ),
@@ -102,10 +106,10 @@ class _InforPageState extends State<reslistinfo> {
                         child: RaisedButton(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
-                          color: Colors.blue[400],
+                          color: Colors.yellow[400],
                           child: Text("Map",
                               style:
-                              TextStyle(color: Colors.white, fontSize: 22)),
+                              TextStyle(color: Colors.black, fontSize: 22)),
                           onPressed: () {},
                         ),
                       ),
@@ -150,9 +154,9 @@ Widget itemCake() {
           height: 15,
         ),
         Text(
-          "Dark Belgium chocolate",
+          "Cafe",
           style: TextStyle(
-              fontWeight: FontWeight.normal, fontSize: 15, color: Colors.white),
+              fontWeight: FontWeight.normal, fontSize: 15, color: Colors.blueGrey),
         ),
         SizedBox(
           height: 15,

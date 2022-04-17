@@ -73,7 +73,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             TextButton(
               onPressed: () {
 
-              },
+                },
+              style: TextButton.styleFrom(
+                primary: Colors.pink, // Background color
+              ),
               child: const Text('Forgot Password',),
             ),
             Container(
