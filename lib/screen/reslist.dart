@@ -57,33 +57,44 @@ class _MyPageState extends State<MyPage> {
                 ),
               ),
             ),
-
-            FittedBox(
-              child: Card(
-                // color: Colors.red,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                elevation: 5,
-                child: Row(
-                  children: <Widget>[
-                    juiceitem(),
-                    Container(
-                      width: 90,
-                      height: 100,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(15.0),
-                        child: Image(
-                          fit: BoxFit.cover,
-                          alignment: Alignment.topRight,
-                          image: AssetImage('assets/Sheddo.jpg'),
-                        ),
-                      ),
+            Hero(
+              tag: "cakeitem",
+              child: FittedBox(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => reslistinfo()),
+                    );
+                  },
+                  child: Card(
+                    // color: Colors.red,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
                     ),
-                  ],
+                    elevation: 5,
+                    child: Row(
+                      children: <Widget>[
+                        juiceitem(),
+                        Container(
+                          width: 90,
+                          height: 100,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15.0),
+                            child: Image(
+                              fit: BoxFit.cover,
+                              alignment: Alignment.topRight,
+                              image: AssetImage('assets/Sheddo.jpg'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
+
 
 
             FittedBox(
