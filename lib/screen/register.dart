@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:pjwireless/screen/home.dart';
 
 class AppetiteRegister extends StatelessWidget {
   const AppetiteRegister({Key? key}) : super(key: key);
+
+  get passwordController => null;
 
   @override
   Widget build(BuildContext context) {
@@ -29,21 +32,36 @@ class AppetiteRegister extends StatelessWidget {
               ),
               TextFormField(
                 decoration: const InputDecoration(
+                  hintText: 'Username',
+                ),
+              ),
+              TextFormField(
+                decoration: const InputDecoration(
                   hintText: 'E-mail',
+                ),
+              ),
+              TextFormField(
+                obscureText: true,
+                controller: passwordController,
+                decoration: const InputDecoration(
+                  hintText: 'Password',
                 ),
               ),
               const SizedBox(
                 height: 24,
               ),
               ElevatedButton(
-                child: const Text('Register'),
-                onPressed: () {
-                  Navigator.pushReplacementNamed(context, '/home');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.yellow,
-                ),
-              )
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.yellow, // Background color
+                  ),
+                  child: const Text('Register'),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Home()),
+                    );
+                  }
+              ),
             ],
           ),
         ),

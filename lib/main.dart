@@ -6,7 +6,6 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   static const String _title = 'Appetite';
 
   @override
@@ -38,16 +37,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
-            Container(
-                alignment: Alignment.center,
-                padding: const EdgeInsets.all(10),
-                child: const Text(
-                  'Appetite',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500,
-                      fontSize: 30),
-                )),
+            Image.asset(
+              'assets/logo.png',
+              width: 300,
+              height: 300,
+            ),
             Container(
                 alignment: Alignment.center,
                 padding: const EdgeInsets.all(10),
@@ -61,7 +55,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 controller: nameController,
                 decoration: const InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'User Name',
+                  labelText: 'Username',
                 ),
               ),
             ),
@@ -86,6 +80,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 height: 50,
                 padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.yellow, // Background color
+                  ),
                   child: const Text('Login'),
                   onPressed: () {
                     Navigator.push(
@@ -109,6 +106,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         MaterialPageRoute(builder: (context) => const AppetiteRegister()),
                     );
                   },
+                  style: TextButton.styleFrom(
+                    primary: Colors.pink, // Background color
+                  ),
                 )
               ],
               mainAxisAlignment: MainAxisAlignment.center,
