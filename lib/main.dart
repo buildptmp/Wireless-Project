@@ -86,7 +86,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   style: ElevatedButton.styleFrom(
                     primary: Colors.yellow, // Background color
                   ),
-                  child: const Text('Login'),
+                  child: const Text('Login',style: TextStyle(color: Colors.black),),
                   onPressed: () {
                     Navigator.push(
                       context,
