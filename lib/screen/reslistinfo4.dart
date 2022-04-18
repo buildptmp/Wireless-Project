@@ -33,7 +33,7 @@ class _InforPageState extends State<reslistinfo> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "Mont Nom Sod",
+                                "Sheddo Sushi Cottage",
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class _InforPageState extends State<reslistinfo> {
                     child: ClipOval(
                       child: Container(
                         child: new Image.asset(
-                          "assets/Mont.jpg",
+                          "assets/Sheddo.jpg",
                           fit: BoxFit.cover,
                           width: 300,
                           height: 300,
@@ -86,9 +86,9 @@ class _InforPageState extends State<reslistinfo> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("Mont Nomsod is a cafe that famous in variety of delicous toast and fresh milk."
+                  Text("Sheddo Sushi Restaurant is a buffet japanese restaurant that has wonderful foods."
                       "\n Opening hours: 11:00 am - 09:00 pm, everyday"
-                      "\n Tel: 02-611-4898"
+                      "\n Tel: 064-159-3969"
                       "\n Address: 2nd floor, Mont Nom Sod, MBK, 444, Phaya Thai Rd, Wang Mai, Pathumwan, Bangkok 10330 Thailand"),
 
                   SizedBox(
@@ -154,7 +154,7 @@ Widget itemCake() {
           height: 15,
         ),
         Text(
-          "Cafe",
+          "Japanese Restaurant",
           style: TextStyle(
               fontWeight: FontWeight.normal, fontSize: 15, color: Colors.blueGrey),
         ),

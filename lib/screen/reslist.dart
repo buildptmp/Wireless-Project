@@ -96,57 +96,78 @@ class _MyPageState extends State<MyPage> {
             ),
 
 
-
-            FittedBox(
-              child: Card(
-                // color: Colors.red,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                elevation: 5,
-                child: Row(
-                  children: <Widget>[
-                    pizzaitem(),
-                    Container(
-                      width: 90,
-                      height: 100,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(15.0),
-                        child: Image(
-                          fit: BoxFit.cover,
-                          alignment: Alignment.topRight,
-                          image: AssetImage('assets/BanNam.jpg'),
-                        ),
-                      ),
+            Hero(
+              tag: "cakeitem",
+              child: FittedBox(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => reslistinfo()),
+                    );
+                  },
+                  child: Card(
+                    // color: Colors.red,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
                     ),
-                  ],
+                    elevation: 5,
+                    child: Row(
+                      children: <Widget>[
+                        pizzaitem(),
+                        Container(
+                          width: 90,
+                          height: 100,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15.0),
+                            child: Image(
+                              fit: BoxFit.cover,
+                              alignment: Alignment.topRight,
+                              image: AssetImage('assets/BanNam.jpg'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
 
-            FittedBox(
-              child: Card(
-                // color: Colors.red,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                elevation: 5,
-                child: Row(
-                  children: <Widget>[
-                    eliteitem(),
-                    Container(
-                      width: 90,
-                      height: 100,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(15.0),
-                        child: Image(
-                          fit: BoxFit.cover,
-                          alignment: Alignment.topRight,
-                          image: AssetImage('assets/Savoey.jpg'),
-                        ),
-                      ),
+            Hero(
+              tag: "cakeitem",
+              child: FittedBox(
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => reslistinfo()),
+                    );
+                  },
+                  child: Card(
+                    // color: Colors.red,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15.0),
                     ),
-                  ],
+                    elevation: 5,
+                    child: Row(
+                      children: <Widget>[
+                        eliteitem(),
+                        Container(
+                          width: 90,
+                          height: 100,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(15.0),
+                            child: Image(
+                              fit: BoxFit.cover,
+                              alignment: Alignment.topRight,
+                              image: AssetImage('assets/Savoey.jpg'),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
