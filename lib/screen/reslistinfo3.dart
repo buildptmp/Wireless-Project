@@ -46,7 +46,7 @@ class _InforPageState3 extends State<reslistinfo3> {
                             ],
                           ),
                         ),
-                        itemCake(),
+                        res3(),
                       ],
                     ),
                   ),
@@ -146,7 +146,7 @@ class MyClipper extends CustomClipper<Path> {
   }
 }
 
-Widget itemCake() {
+Widget res3() {
   return Container(
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
