@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/reslist.dart';
+import 'package:pjwireless/screen/map.dart';
 
 
 class reslistinfo extends StatefulWidget {
@@ -89,9 +90,9 @@ class _InforPageState extends State<reslistinfo> {
                     height: 10,
                   ),
                   Text("Mont Nomsod is a cafe that famous in variety of delicous toast and fresh milk."
-                      "\n Opening hours: 11:00 am - 09:00 pm, everyday"
+                      "\n Opening hours: 2:00 pm - 11:00 pm, everyday"
                       "\n Tel: 02-611-4898"
-                      "\n Address: 2nd floor, Mont Nom Sod, MBK, 444, Phaya Thai Rd, Wang Mai, Pathumwan, Bangkok 10330 Thailand"),
+                      "\n Address: Dinso Rd, Sao Chingcha, Phra Nakhon, Bangkok"),
 
                   SizedBox(
                     height: 10,
@@ -112,7 +113,9 @@ class _InforPageState extends State<reslistinfo> {
                           child: Text("Map",
                               style:
                               TextStyle(color: Colors.black, fontSize: 22)),
-                          onPressed: () {},
+                          onPressed: () {
+                            Map.openMap(13.7537318,100.5010803);
+                          },
                         ),
                       ),
                     ],

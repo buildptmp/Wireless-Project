@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/reslist.dart';
-
+import 'package:pjwireless/screen/map.dart';
 
 class reslistinfo4 extends StatefulWidget {
   @override
@@ -110,7 +110,9 @@ class _InforPageState extends State<reslistinfo4> {
                           child: Text("Map",
                               style:
                               TextStyle(color: Colors.black, fontSize: 22)),
-                          onPressed: () {},
+                          onPressed: () {
+                            Map.openMap(13.7579201,100.4831834);
+                          },
                         ),
                       ),
                     ],

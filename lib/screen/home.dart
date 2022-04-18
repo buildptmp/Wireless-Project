@@ -3,6 +3,7 @@ import 'package:pjwireless/screen/profile.dart';
 import 'package:pjwireless/screen/restaurant.dart';
 import 'package:pjwireless/screen/starDisplay.dart';
 import 'package:pjwireless/screen/reslist.dart';
+import 'package:pjwireless/screen/map.dart';
 
 void main() => runApp(MyApp());
 List<String> buttonsTitle = ["All", "Popular", "Dessert", "Snack", "Fast Food"];
@@ -60,6 +61,7 @@ class Home extends StatelessWidget {
                 );
               }
             ),
+
             IconButton(
               icon: Icon(Icons.person_outline),
               onPressed: () {
@@ -67,9 +69,9 @@ class Home extends StatelessWidget {
                   context,
                   MaterialPageRoute(builder: (context) => ProfileApp()),
                 );
-
-    },
+              },
             ),
+
           ],
         ),
       ),
