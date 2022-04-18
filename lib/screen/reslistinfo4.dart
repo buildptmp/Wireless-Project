@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/reslist.dart';
 
 
-class reslistinfo extends StatefulWidget {
+class reslistinfo4 extends StatefulWidget {
   @override
   _InforPageState createState() => _InforPageState();
 }
 
-class _InforPageState extends State<reslistinfo> {
+class _InforPageState extends State<reslistinfo4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _InforPageState extends State<reslistinfo> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "Sheddo Sushi Cottage",
+                                "Savoey Thamaharaj",
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class _InforPageState extends State<reslistinfo> {
                     child: ClipOval(
                       child: Container(
                         child: new Image.asset(
-                          "assets/Sheddo.jpg",
+                          "assets/Savoey.jpg",
                           fit: BoxFit.cover,
                           width: 300,
                           height: 300,
@@ -86,10 +86,10 @@ class _InforPageState extends State<reslistinfo> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("Sheddo Sushi Restaurant is a buffet japanese restaurant that has wonderful foods."
-                      "\n Opening hours: 11:00 am - 09:00 pm, everyday"
-                      "\n Tel: 064-159-3969"
-                      "\n Address: 2nd floor, Mont Nom Sod, MBK, 444, Phaya Thai Rd, Wang Mai, Pathumwan, Bangkok 10330 Thailand"),
+                  Text("Savoey Thamaharaj is a river side restaurant that has variety of delicous foods."
+                      "\n Opening hours: 10:00 am - 10:00 pm"
+                      "\n Tel: 086-341-8472"
+                      "\n Address: 2nd floor, G Building, Mahathat Ally, Maharaj Rd, Phrabromratchawang, Phranakhon, Bangkok 10120 Thailand"),
 
                   SizedBox(
                     height: 10,

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/home.dart';
-import 'package:pjwireless/screen/reslistinfo3.dart';
 import 'package:pjwireless/screen/restlistinfo.dart';
+import 'package:pjwireless/screen/reslistinfo2.dart';
+import 'package:pjwireless/screen/reslistinfo3.dart';
+import 'package:pjwireless/screen/reslistinfo4.dart';
 
 
 class MyPage extends StatefulWidget {
@@ -58,14 +60,15 @@ class _MyPageState extends State<MyPage> {
                 ),
               ),
             ),
+
             Hero(
-              tag: "cakeitem",
+              tag: "juiceitem",
               child: FittedBox(
                 child: GestureDetector(
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => reslistinfo()),
+                      MaterialPageRoute(builder: (context) => reslistinfo2()),
                     );
                   },
                   child: Card(
@@ -142,7 +145,7 @@ class _MyPageState extends State<MyPage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => reslistinfo()),
+                      MaterialPageRoute(builder: (context) => reslistinfo4()),
                     );
                   },
                   child: Card(
@@ -341,7 +344,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Thai-Europe Restaurant",
+            "Thai Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
@@ -408,7 +411,7 @@ class _MyPageState extends State<MyPage> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
             child: Text(
-              "Sawei Thamaharat",
+              "Savoey Thamaharaj",
               style: TextStyle(
                   fontWeight: FontWeight.bold, fontSize: 15, color: Colors.red),
             ),

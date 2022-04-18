@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/reslist.dart';
 
 
-class reslistinfo extends StatefulWidget {
+class reslistinfo2 extends StatefulWidget {
   @override
   _InforPageState createState() => _InforPageState();
 }
 
-class _InforPageState extends State<reslistinfo> {
+class _InforPageState extends State<reslistinfo2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,9 +87,9 @@ class _InforPageState extends State<reslistinfo> {
                     height: 10,
                   ),
                   Text("Sheddo Sushi Restaurant is a buffet japanese restaurant that has wonderful foods."
-                      "\n Opening hours: 11:00 am - 09:00 pm, everyday"
-                      "\n Tel: 064-159-3969"
-                      "\n Address: 2nd floor, Mont Nom Sod, MBK, 444, Phaya Thai Rd, Wang Mai, Pathumwan, Bangkok 10330 Thailand"),
+                      "\n Opening hours: 11:00 am - 10:00 pm, everyday"
+                      "\n Tel: 064-159-3969, 089-424-2451"
+                      "\n Address: 22/1, Prachachuen Rd, Bang Talad, Pak gret, Nonthaburi 11120 Thailand"),
 
                   SizedBox(
                     height: 10,
