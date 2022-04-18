@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pjwireless/screen/profile.dart';
 import 'package:pjwireless/screen/restaurant.dart';
 import 'package:pjwireless/screen/starDisplay.dart';
 import 'package:pjwireless/screen/reslist.dart';
@@ -62,6 +63,10 @@ class Home extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.person_outline),
               onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfileApp()),
+                );
 
     },
             ),

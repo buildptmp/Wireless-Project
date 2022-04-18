@@ -53,7 +53,9 @@ class _InforPageState extends State<reslistinfo> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(
-                      left: ((MediaQuery.of(context).size.width - 175) / 2),
+
+                      left: ((MediaQuery.of(context).size.width -175) / 2),
+                      //right: ((MediaQuery.of(context).size.width +10) / 2),
                       top: (MediaQuery.of(context).size.height+175) / 5),
                   child: Hero(
                     tag: "res1",
