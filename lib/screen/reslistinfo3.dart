@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/reslist.dart';
 
 
-class reslistinfo extends StatefulWidget {
+class reslistinfo3 extends StatefulWidget {
   @override
-  _InforPageState createState() => _InforPageState();
+  _InforPageState3 createState() => _InforPageState3();
 }
 
-class _InforPageState extends State<reslistinfo> {
+class _InforPageState3 extends State<reslistinfo3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,7 @@ class _InforPageState extends State<reslistinfo> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(
-                                "Sheddo Sushi Cottage",
+                                "Ban Nam Khiang Din",
                                 style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
@@ -56,11 +56,11 @@ class _InforPageState extends State<reslistinfo> {
                       left: ((MediaQuery.of(context).size.width - 175) / 2),
                       top: (MediaQuery.of(context).size.height+175) / 5),
                   child: Hero(
-                    tag: "cakeitem",
+                    tag: "pizzaitem",
                     child: ClipOval(
                       child: Container(
                         child: new Image.asset(
-                          "assets/Sheddo.jpg",
+                          "assets/BanNam.jpg",
                           fit: BoxFit.cover,
                           width: 300,
                           height: 300,
@@ -86,10 +86,11 @@ class _InforPageState extends State<reslistinfo> {
                   SizedBox(
                     height: 10,
                   ),
-                  Text("Sheddo Sushi Restaurant is a buffet japanese restaurant that has wonderful foods."
-                      "\n Opening hours: 11:00 am - 09:00 pm, everyday"
-                      "\n Tel: 064-159-3969"
-                      "\n Address: 2nd floor, Mont Nom Sod, MBK, 444, Phaya Thai Rd, Wang Mai, Pathumwan, Bangkok 10330 Thailand"),
+                  Text(" Ban Nam Kieng Din is a restuarant where has delicious foods and good environment. "
+                      "\n Opening hours: Monday - Thursday 17:00 to 22:00 hrs., "
+                      "\n Friday - Sunday 16:00 to 22:00 hrs"
+                      "\n Tel: 02-441-3837"
+                      "\n Address: 60/1 Moo 12 Soi Sala Thammasop Thawi Wattana, Bangkok 10170"),
 
                   SizedBox(
                     height: 10,
@@ -154,7 +155,7 @@ Widget itemCake() {
           height: 15,
         ),
         Text(
-          "Japanese Restaurant",
+          "Thai-Europe Restaurant",
           style: TextStyle(
               fontWeight: FontWeight.normal, fontSize: 15, color: Colors.blueGrey),
         ),

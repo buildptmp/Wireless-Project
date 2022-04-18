@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pjwireless/screen/home.dart';
+import 'package:pjwireless/screen/reslistinfo3.dart';
 import 'package:pjwireless/screen/restlistinfo.dart';
 
 
@@ -103,7 +104,7 @@ class _MyPageState extends State<MyPage> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => reslistinfo()),
+                      MaterialPageRoute(builder: (context) => reslistinfo3()),
                     );
                   },
                   child: Card(
@@ -340,7 +341,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Thai Restaurant",
+            "Thai-Europe Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
