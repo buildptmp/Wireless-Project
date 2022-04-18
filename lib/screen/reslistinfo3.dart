@@ -56,7 +56,7 @@ class _InforPageState3 extends State<reslistinfo3> {
                       left: ((MediaQuery.of(context).size.width - 175) / 2),
                       top: (MediaQuery.of(context).size.height+175) / 5),
                   child: Hero(
-                    tag: "pizzaitem",
+                    tag: "res3",
                     child: ClipOval(
                       child: Container(
                         child: new Image.asset(
