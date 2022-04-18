@@ -24,7 +24,7 @@ class _MyPageState extends State<MyPage> {
           scrollDirection: Axis.vertical,
           children: <Widget>[
             Hero(
-              tag: "cakeitem",
+              tag: "res1",
               child: FittedBox(
                 child: GestureDetector(
                   onTap: () {
@@ -41,7 +41,7 @@ class _MyPageState extends State<MyPage> {
                     elevation: 5,
                     child: Row(
                       children: <Widget>[
-                        itemcake(),
+                        res1(),
                         Container(
                           width: 90,
                           height: 100,
@@ -62,7 +62,7 @@ class _MyPageState extends State<MyPage> {
             ),
 
             Hero(
-              tag: "juiceitem",
+              tag: "res2",
               child: FittedBox(
                 child: GestureDetector(
                   onTap: () {
@@ -79,7 +79,7 @@ class _MyPageState extends State<MyPage> {
                     elevation: 5,
                     child: Row(
                       children: <Widget>[
-                        juiceitem(),
+                        res2(),
                         Container(
                           width: 90,
                           height: 100,
@@ -101,7 +101,7 @@ class _MyPageState extends State<MyPage> {
 
 
             Hero(
-              tag: "cakeitem",
+              tag: "res3",
               child: FittedBox(
                 child: GestureDetector(
                   onTap: () {
@@ -118,7 +118,7 @@ class _MyPageState extends State<MyPage> {
                     elevation: 5,
                     child: Row(
                       children: <Widget>[
-                        pizzaitem(),
+                        res3(),
                         Container(
                           width: 90,
                           height: 100,
@@ -139,7 +139,7 @@ class _MyPageState extends State<MyPage> {
             ),
 
             Hero(
-              tag: "cakeitem",
+              tag: "res4",
               child: FittedBox(
                 child: GestureDetector(
                   onTap: () {
@@ -156,7 +156,7 @@ class _MyPageState extends State<MyPage> {
                     elevation: 5,
                     child: Row(
                       children: <Widget>[
-                        eliteitem(),
+                        res4(),
                         Container(
                           width: 90,
                           height: 100,
@@ -181,7 +181,7 @@ class _MyPageState extends State<MyPage> {
     );
   }
 
-  Widget itemcake() {
+  Widget res1() {
     return Container(
       //width: 150,
       child: Column(
@@ -249,7 +249,7 @@ class _MyPageState extends State<MyPage> {
     );
   }
 
-  Widget juiceitem() {
+  Widget res2() {
     return Container(
       //width: 150,
       child: Column(
@@ -325,7 +325,7 @@ class _MyPageState extends State<MyPage> {
     );
   }
 
-  Widget pizzaitem() {
+  Widget res3() {
     return Container(
       //width: 150,
       child: Column(
@@ -344,7 +344,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Thai Restaurant",
+            "Thai-Europe Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,
@@ -401,7 +401,7 @@ class _MyPageState extends State<MyPage> {
     );
   }
 
-  Widget eliteitem() {
+  Widget res4() {
     return Container(
       //width: 150,
       child: Column(
@@ -420,7 +420,7 @@ class _MyPageState extends State<MyPage> {
             height: 5,
           ),
           Text(
-            "Thai - International Restaurant",
+            "Thai-International Restaurant",
             style: TextStyle(
                 fontWeight: FontWeight.normal,
                 fontSize: 9.5,

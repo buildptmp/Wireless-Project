@@ -46,7 +46,7 @@ class _InforPageState extends State<reslistinfo4> {
                             ],
                           ),
                         ),
-                        itemCake(),
+                        res4(),
                       ],
                     ),
                   ),
@@ -56,7 +56,7 @@ class _InforPageState extends State<reslistinfo4> {
                       left: ((MediaQuery.of(context).size.width - 175) / 2),
                       top: (MediaQuery.of(context).size.height+175) / 5),
                   child: Hero(
-                    tag: "cakeitem",
+                    tag: "res4",
                     child: ClipOval(
                       child: Container(
                         child: new Image.asset(
@@ -145,7 +145,7 @@ class MyClipper extends CustomClipper<Path> {
   }
 }
 
-Widget itemCake() {
+Widget res4() {
   return Container(
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
