@@ -52,16 +52,21 @@ class _InforPageState3 extends State<reslistinfo3> {
                   ),
                 ),
                 Padding(
+
                   padding: EdgeInsets.only(
+
                       left: ((MediaQuery.of(context).size.width - 175) / 2),
                       top: (MediaQuery.of(context).size.height+175) / 5),
                   child: Hero(
                     tag: "res3",
                     child: ClipOval(
                       child: Container(
+                        alignment: Alignment.center,
                         child: new Image.asset(
+
                           "assets/BanNam.jpg",
                           fit: BoxFit.cover,
+                          alignment: Alignment.center ,
                           width: 300,
                           height: 300,
                         ),

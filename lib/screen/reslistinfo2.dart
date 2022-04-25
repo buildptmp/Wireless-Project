@@ -112,7 +112,7 @@ class _InforPageState extends State<reslistinfo2> {
                               style:
                               TextStyle(color: Colors.black, fontSize: 22)),
                           onPressed: () {
-                            Map.openMap(13.8869882,100.5494928);
+                            Map.openMap(13.8869882,100.5517278);
                           },
                         ),
                       ),
